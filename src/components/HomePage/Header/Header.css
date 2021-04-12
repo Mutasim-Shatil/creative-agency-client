@@ -1,0 +1,28 @@
+.container {
+    margin-left: 0 8% auto;
+}
+.background {
+    background: #FBD062;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
+    height: 100vh;
+
+}
+
+.header {
+    /* background: #FBD062;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%); */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* padding: 30px; */
+}
+.header__left {
+    /* grid-column: 1 /6; */
+    width: 100%;
+}
+.header__right {
+    /* grid-column: 6 /-1; */
+
+}
+.header__right img {
+    width: 100%;
+}
