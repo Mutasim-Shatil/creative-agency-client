@@ -17,13 +17,16 @@ const Header = () => {
               </h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellendus voluptas cum 
+                Repellendus voluptas cum
               </p>
             </div>
             <div className="header__right col-md-8 col-sm-12">
               <img src={headerImg} alt="" />
             </div>
           </div>
+          <button type="button" class="btn btn-dark">
+            Hire us
+          </button>
         </div>
       </div>
     );
