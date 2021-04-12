@@ -1,9 +1,49 @@
-.services {
+.service {
     display: flex;
     gap: 10%;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 .company img {
     width: 100%;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+.services__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-side {
+    margin-top: 90px;
+
+}
+.services {
+    margin-top: 80px;
+
+}
+.services__details {
+    box-shadow: 8px 6px 20px lightgray;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.services__details h6, p {
+    padding-top: 10px;
+}
+.services__details p {
+    text-align: center;
+}
+.services__details img {
+    width: 20%;
+}
+.services__title {
+    text-align: center;
+}
+.services__title span {
+    color: rgb(11, 179, 101);
 }
