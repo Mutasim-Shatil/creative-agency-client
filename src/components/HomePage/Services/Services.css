@@ -4,6 +4,10 @@
     /* justify-content: center; */
     align-items: center;
 }
+.company {
+    margin-top: 20px;
+
+}
 .company img {
     width: 100%;
 }
@@ -11,6 +15,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
+}
+@media(max-width:600px) {
+    .services {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: auto;
+
+    }
 }
 .services__details {
     display: flex;

@@ -25,9 +25,9 @@ const Services = () => {
             Provide awesome <span>services</span>
           </h4>
           <div className="services">
-            {service.map((service) => {
+            {service.map((service,index) => {
               return (
-                <div className="services__details">
+                <div key={index} className="services__details">
                   <img src={service.img} alt="" />
                   <h6>{service.title}</h6>
                   <p>{service.details}</p>

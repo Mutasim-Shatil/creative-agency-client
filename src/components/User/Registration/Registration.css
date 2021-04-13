@@ -1,0 +1,38 @@
+.registration {
+    /* border: 1px solid black; */
+    width: 60%;
+    margin: 10px auto;
+    box-shadow: 1px 6px 15px lightblue;
+    
+}
+@media (max-width: 768px){
+    .registration {
+    /* border: 1px solid black; */
+    width: 100%;
+    /* margin: 10px auto; */
+    box-shadow: 1px 6px 15px lightblue;
+    
+}
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    /* justify-content: center;
+    align-items: center; */
+    /* gap: 10px; */
+}
+.form input {
+    width: 100%;
+    border: 1px solid lightgray;
+}
+.register {
+    display: flex;
+    justify-content: space-between;
+    /* width: 60%; */
+    /* margin: 0 auto; */
+    padding: 1rem;
+
+}
