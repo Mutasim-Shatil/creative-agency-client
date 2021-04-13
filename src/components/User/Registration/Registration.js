@@ -6,7 +6,7 @@ const Registration = () => {
   const [newUser, setNewUser] = useState({
     name: "",
     email: "",
-    passwordHash: "",
+    password: "",
     phone: "",
   });
   const handleOnchange = (e) => {
@@ -15,8 +15,19 @@ const Registration = () => {
     setNewUser(registerUser);
   };
   const handleRegister = (user) => {
-    console.log(user);
-    fetch("");
+    // console.log(user);
+    fetch("http://localhost:5000/users/register", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(user),
+    })
+      .then((res) => res.json())
+      .then((success) => {
+        // if (success) {
+        //   alert("Appointment created successfully.");
+        // }
+        console.log(success);
+      });
   };
   console.log(newUser);
   return (
@@ -38,7 +49,7 @@ const Registration = () => {
           <input
             type="password"
             onBlur={handleOnchange}
-            name="passwordHash"
+            name="password"
             placeholder="Password"
           />
           <input
